@@ -115,7 +115,7 @@ export default function Home() {
         附表对照关系，选择出生年月、性别及人员类型，即可计算出对应的改革后法定退休年龄及退休信息。
       </p>
 
-      <div className="flex flex-row gap-4 mt-6 w-full max-w-lg">
+      <div className="flex flex-col sm:flex-row gap-4 mt-6 w-full max-w-lg">
         <div className="relative w-full sm:w-1/2">
           <Input
             type="number"
