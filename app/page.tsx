@@ -53,7 +53,7 @@ export default function Home() {
             prompts.messages[0],
             {
               role: "user",
-              content: `TOPIC:延迟退休，BACKGROUND：出生年份：${formData.birthYear}，出生月份：${formData.birthMonth}，类型：${formData.type}，原退休年龄：${retirementInfo?.orig_ret_age}，原退休时间：${formatDate(retirementInfo?.orig_ret_time)}，延迟月数：${retirementInfo?.delay}个月，距离退休还有：${retirementInfo?.ret_days_between}天`,
+              content: `TOPIC:延迟退休，BACKGROUND：出生年份：${formData.birthYear}，出生月份：${formData.birthMonth}，性别：${formData.type === "male" ? "男性" : "女性"}，原退休年龄：${retirementInfo?.orig_ret_age}，原退休时间：${formatDate(retirementInfo?.orig_ret_time)}，延迟月数：${retirementInfo?.delay}个月，距离退休还有：${retirementInfo?.ret_days_between}天`,
             },
           ],
         }),
